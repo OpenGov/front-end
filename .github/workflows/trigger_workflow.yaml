@@ -1,0 +1,10 @@
+name: Trigger Ephemeral Environmen
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Test workflow
+      run: echo "Test Successful"
