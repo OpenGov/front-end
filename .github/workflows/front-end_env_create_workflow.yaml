@@ -12,7 +12,7 @@ jobs:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v1
         with:
-          #token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
+          token: ${{ secrets.GIT_HUB_ACCESS_TOKEN }}
           repository: OpenGov/cncf-demo-prep
           event-type: EKS-cluster
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}", "name" : "${{ github.event.pull_request.head.repo.name }}", "pull_number" : "${{ github.event.number }}", "target_branch_name" : "${{ github.base_ref }}", "branch_name" : "${{ github.head_ref }}"}'
