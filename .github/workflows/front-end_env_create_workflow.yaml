@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-18.04
     if: github.event.label.name == 'ephemeral-deploy'
     env:
-      EPHEMERAL_RUN_REPO: ephemeral.run
+      EPHEMERAL_RUN_REPO: cncf-demo-prep
     steps:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v1
