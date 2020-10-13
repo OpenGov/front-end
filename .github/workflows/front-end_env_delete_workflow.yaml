@@ -2,7 +2,7 @@ name: front-end-env-delete-workflow
 on:
   pull_request:
     branches:
-      - master
+      - main
     types: [labeled, closed]
 jobs:
   delete-workflow:

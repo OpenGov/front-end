@@ -2,14 +2,14 @@ name: front-end-PR-workflow
 on:
   pull_request:
     branches:
-      - master
+      - main
     types: [labeled]
 jobs:
   dispatch_repo:
     runs-on: ubuntu-18.04
     if: github.event.label.name == 'ephemeral-deploy'
     env:
-      EPHEMERAL_RUN_REPO: cncf-demo-prep
+      EPHEMERAL_RUN_REPO: ephemeral.run
     steps:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v1
