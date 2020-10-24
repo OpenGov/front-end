@@ -8,7 +8,7 @@
    *
    * Example:
    *
-   * var app = express();
+   * var app = express();xcgfcfgcfgcgfcfgcccgcgfcgfccgfhcgcgc
    * app.use(helpers.errorHandler);
    * */
 
